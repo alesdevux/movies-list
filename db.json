@@ -1,65 +1,65 @@
 {
-  "peliculas": [
+  "movies": [
     {
       "id": 2,
-      "nombre": "Pulp Fiction",
+      "title": "Pulp Fiction",
       "director": "Tarantino",
-      "clasificacion": "Acción",
+      "category": "Acción",
       "starts": 5
     },
     {
       "id": 5,
-      "nombre": "El silencio de los corderos",
+      "title": "El silencio de los corderos",
       "director": "Jonathan Demme",
-      "clasificacion": "Drama",
+      "category": "Drama",
       "starts": 3
     },
     {
       "id": 6,
-      "nombre": "Forest Gump",
+      "title": "Forest Gump",
       "director": "Robert Zemeckis",
-      "clasificacion": "Comedia",
+      "category": "Comedia",
       "starts": 5
     },
     {
       "id": 7,
-      "nombre": "Las Hurdes",
+      "title": "Las Hurdes",
       "director": "Luis Buñuel",
-      "clasificacion": "Documental",
+      "category": "Documental",
       "starts": 4
     },
     {
       "id": 8,
-      "nombre": "Spider-Man: No Way Home",
+      "title": "Spider-Man: No Way Home",
       "director": "Jon Watts",
-      "clasificacion": "Acción",
+      "category": "Acción",
       "starts": 5
     },
     {
       "id": 9,
-      "nombre": "El sexto sentido",
+      "title": "El sexto sentido",
       "director": "M. Night Shyamalan",
-      "clasificacion": "Drama",
+      "category": "Drama",
       "starts": 5
     },
     {
       "id": 10,
-      "nombre": "Sagan",
+      "title": "Sagan",
       "director": "M. Night Shyamalan",
-      "clasificacion": "Drama",
+      "category": "Drama",
       "starts": 5
     },
     {
       "id": 11,
-      "nombre": "Batman",
+      "title": "Batman",
       "director": "M. Night Shyamalan",
-      "clasificacion": "Drama",
+      "category": "Drama",
       "starts": 5
     },
     {
-      "nombre": "Cowspiracy: The Sustainability Secret",
+      "title": "Cowspiracy: The Sustainability Secret",
       "director": "Kip Andersen, Keegan Kuhn",
-      "clasificacion": "Documental",
+      "category": "Documental",
       "starts": 4,
       "id": 12
     }
