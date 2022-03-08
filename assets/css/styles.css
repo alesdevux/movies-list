@@ -25,7 +25,7 @@ h2 {
 
 .movies {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
   grid-gap: 2rem;
   padding: 2rem;
 }
@@ -37,4 +37,27 @@ h2 {
   overflow: hidden;
   padding: 1.5rem;
   height: 50vh;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  position: relative;
+}
+
+.bg-filter {
+  background: rgba(0, 0, 0, 0.2);
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.movie h2,
+.movie p {
+  color: #fff;
 }
