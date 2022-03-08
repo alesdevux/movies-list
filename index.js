@@ -17,6 +17,9 @@ function viewMovies(movies) {
     domMovies.innerHTML += `
       <div class="movie">
         <h2>${movie.title}</h2>
+        <p>${movie.director}</p>
+        <p>${movie.category}</p>
+        <p>${movie.starts}</p>
       </div>
     `
   }
