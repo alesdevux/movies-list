@@ -66,10 +66,12 @@ span {
   color: var(--white-base);
   position: relative;
   border: 2px solid var(--primary);
+  transition: all 0.2s ease-in;
 }
 
 .movie:hover {
   border: 2px solid var(--secondary);
+  transform: scale(1.05);
 }
 
 .bg-filter {
@@ -98,14 +100,16 @@ span {
 .edit-delete {
   position: absolute;
   top: calc(50% - 3rem);
-  right: -2px;
+  right: -4rem;
   border: 2px solid var(--primary);
   border-radius: 1rem 0 0 1rem;
   overflow: hidden;
+  transition: right 0.5s ease-in 0.2s;
 }
 
 .movie:hover .edit-delete {
-  border: 2px solid var(--secondary);
+  border-color: var(--secondary);
+  right: -2px;
 }
 
 .edit-delete > div {
@@ -124,6 +128,10 @@ span {
 
 .edit-delete img {
   cursor: pointer;
+}
+
+.edit-delete div:hover img {
+  scale: 1.1;
 }
 
 #delete {
