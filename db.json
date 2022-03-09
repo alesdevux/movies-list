@@ -35,6 +35,42 @@
       "stars": 5,
       "img": "batman.png",
       "time": "2:56h"
+    },
+    {
+      "id": 6,
+      "title": "Frozen",
+      "director": "Chris Buck, Jennifer Lee",
+      "category": "Animation, Adventure",
+      "stars": 4,
+      "img": "frozen.jpg",
+      "time": "1:42h"
+    },
+    {
+      "id": 7,
+      "title": "Encanto",
+      "director": "Jared Bush, Byron Howard, Charise Castro Smith",
+      "category": "Animation, Comedy",
+      "stars": 5,
+      "img": "encanto.jpeg",
+      "time": "1:42h"
+    },
+    {
+      "id": 9,
+      "title": "The Wave",
+      "director": "Dennis Gansel",
+      "category": "Drama, Thriller",
+      "stars": 4,
+      "img": "thewave.jpg",
+      "time": "1:47h"
+    },
+    {
+      "id": 1,
+      "title": "In Time",
+      "director": "Andrew Niccol",
+      "category": "Action, Sci-Fi Thriller",
+      "stars": 5,
+      "img": "intime.jpg",
+      "time": "1:49h"
     }
   ]
 }
