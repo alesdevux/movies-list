@@ -169,6 +169,11 @@ button:hover {
   gap: 0.5rem;
 }
 
+.categories {
+  display: flex;
+  gap: 0.5rem;
+}
+
 .category {
   font-size: 0.8rem;
   padding: 0.2rem 1.2rem;

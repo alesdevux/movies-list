@@ -4,7 +4,7 @@
       "id": 2,
       "title": "Pulp Fiction",
       "director": "Tarantino",
-      "category": "Action",
+      "category": "Action, Crime, Drama",
       "stars": 5,
       "img": "pulp-fiction.png",
       "time": "1:25h"
@@ -19,15 +19,6 @@
       "time": "1:25h"
     },
     {
-      "id": 11,
-      "title": "Batman",
-      "director": "M. Night Shyamalan",
-      "category": "Drama",
-      "stars": 5,
-      "img": "batman.png",
-      "time": "1:25h"
-    },
-    {
       "title": "Cowspiracy: The Sustainability Secret",
       "director": "Kip Andersen, Keegan Kuhn",
       "category": "Documental",
@@ -35,6 +26,15 @@
       "id": 12,
       "img": "cowspiracy.png",
       "time": "1:25h"
+    },
+    {
+      "id": 3,
+      "title": "The Batman",
+      "director": "Matt Reeves",
+      "category": "Action, Drama, Crime",
+      "stars": 5,
+      "img": "batman.png",
+      "time": "2:56h"
     }
   ]
 }

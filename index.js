@@ -51,6 +51,13 @@ function viewMovies(movies) {
       movie.img = "default.png"
     }
 
+    let categories = movie.category
+    let categoriesArray = categories.split(',')
+    let viewCategories = ``
+    for (let i = 0; i < categoriesArray.length; i++) {
+      viewCategories += `<span class="category">${categoriesArray[i]}</span>`
+    }
+
     // add star.svg for movie.stars
     let stars = ``
     for (let j = 0; j < movie.stars; j++) {
@@ -59,8 +66,6 @@ function viewMovies(movies) {
     for (let x = movie.stars; x < 5; x++) {
       stars += `<img src="./assets/svg/star-outline.svg" alt="star-outline" class="star-outline">`
     }
-    // console.log(stars)
-    // console.log(movie.id)
 
     domMovies.innerHTML += `
       <div class="movie" id="${movieId}">
@@ -77,7 +82,7 @@ function viewMovies(movies) {
           </div>
           <div class="movie-info">
             <div class="categories">
-              <span class="category">${movie.category}</span>
+              ${viewCategories}
             </div>
             <p class="director">${movie.director}</p>
             <div class="time-stars">
