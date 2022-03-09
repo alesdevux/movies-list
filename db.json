@@ -4,17 +4,19 @@
       "id": 2,
       "title": "Pulp Fiction",
       "director": "Tarantino",
-      "category": "Acción",
+      "category": "Action",
       "stars": 5,
-      "img": "pulp-fiction.png"
+      "img": "pulp-fiction.png",
+      "time": "1:25h"
     },
     {
       "id": 8,
       "title": "Spider-Man: No Way Home",
       "director": "Jon Watts",
-      "category": "Acción",
+      "category": "Action",
       "stars": 5,
-      "img": "spiderman.png"
+      "img": "spiderman.png",
+      "time": "1:25h"
     },
     {
       "id": 11,
@@ -22,7 +24,8 @@
       "director": "M. Night Shyamalan",
       "category": "Drama",
       "stars": 5,
-      "img": "batman.png"
+      "img": "batman.png",
+      "time": "1:25h"
     },
     {
       "title": "Cowspiracy: The Sustainability Secret",
@@ -30,7 +33,8 @@
       "category": "Documental",
       "stars": 4,
       "id": 12,
-      "img": "cowspiracy.png"
+      "img": "cowspiracy.png",
+      "time": "1:25h"
     }
   ]
 }

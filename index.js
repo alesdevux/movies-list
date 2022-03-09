@@ -35,13 +35,16 @@ function viewMovies(movies) {
         <div class="bg-filter">
           <h2>${movie.title}</h2>
           <div class="movie-info">
-            <p>${movie.director}</p>
             <div class="categories">
               <span class="category">${movie.category}</span>
             </div>
-            <div class="stars">
-              ${stars}
-              <span>${movie.stars}</span>
+            <p class="director">${movie.director}</p>
+            <div class="time-stars">
+              <p class="time">${movie.time}</p>
+              <div class="stars">
+                ${stars}
+                <span>${movie.stars}</span>
+              </div>
             </div>
           </div>
         </div>

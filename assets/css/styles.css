@@ -4,6 +4,11 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  cursor: default;
+}
+
+::selection {
+  display: none;
 }
 
 body {
@@ -48,7 +53,7 @@ span {
 }
 
 .bg-filter {
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.4);
   height: 100%;
   left: 0;
   position: absolute;
@@ -84,6 +89,20 @@ span {
 
 .category:hover {
   background-color: rgba(0, 0, 0, 0.5);
+}
+
+.director {
+  font-size: 0.8rem;
+}
+
+.time-stars {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.time {
+  text-transform: uppercase;
 }
 
 .stars {
