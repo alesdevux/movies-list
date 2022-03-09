@@ -34,6 +34,14 @@ function viewMovies(movies) {
       <div class="movie" id="${id}">
         <div class="bg-filter">
           <h2>${movie.title}</h2>
+          <div class="edit-delete">
+            <div id="edit">
+              <img src="./assets/svg/edit.svg" alt="edit" class="edit-icon">
+            </div>
+            <div id="delete">
+              <img src="./assets/svg/delete.svg" alt="delete" class="delete-icon">
+            </div>
+          </div>
           <div class="movie-info">
             <div class="categories">
               <span class="category">${movie.category}</span>

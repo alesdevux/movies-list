@@ -95,6 +95,45 @@ span {
   color: var(--white-base);
 }
 
+.edit-delete {
+  position: absolute;
+  top: calc(50% - 3rem);
+  right: -2px;
+  border: 2px solid var(--primary);
+  border-radius: 1rem 0 0 1rem;
+  overflow: hidden;
+}
+
+.movie:hover .edit-delete {
+  border: 2px solid var(--secondary);
+}
+
+.edit-delete > div {
+  background: var(--black-lighter);
+  height: 3rem;
+  width: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.edit-delete > div:hover {
+  background: var(--black-light);
+}
+
+.edit-delete img {
+  cursor: pointer;
+}
+
+#delete {
+  border-top: 2px solid var(--primary);
+}
+
+.movie:hover #delete {
+  border-top: 2px solid var(--secondary);
+}
+
 .movie-info {
   display: flex;
   flex-direction: column;
