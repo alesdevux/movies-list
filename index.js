@@ -36,7 +36,9 @@ function viewMovies(movies) {
           <h2>${movie.title}</h2>
           <div class="movie-info">
             <p>${movie.director}</p>
-            <p>${movie.category}</p>
+            <div class="categories">
+              <span class="category">${movie.category}</span>
+            </div>
             <div class="stars">
               ${stars}
               <span>${movie.stars}</span>

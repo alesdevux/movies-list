@@ -23,6 +23,10 @@ h2 {
   letter-spacing: 0.11rem;
 }
 
+span {
+  display: inline-block;
+}
+
 .movies {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
@@ -60,6 +64,26 @@ h2 {
 .movie h2,
 .movie p {
   color: #fff;
+}
+
+.movie-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.category {
+  font-size: 0.8rem;
+  padding: 0.2rem 1.2rem;
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  border-radius: 2rem;
+  text-transform: uppercase;
+  background-color: rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+.category:hover {
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .stars {

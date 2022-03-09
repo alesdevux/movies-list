@@ -9,47 +9,12 @@
       "img": "pulp-fiction.png"
     },
     {
-      "id": 5,
-      "title": "El silencio de los corderos",
-      "director": "Jonathan Demme",
-      "category": "Drama",
-      "stars": 3
-    },
-    {
-      "id": 6,
-      "title": "Forest Gump",
-      "director": "Robert Zemeckis",
-      "category": "Comedia",
-      "stars": 5
-    },
-    {
-      "id": 7,
-      "title": "Las Hurdes",
-      "director": "Luis Buñuel",
-      "category": "Documental",
-      "stars": 4
-    },
-    {
       "id": 8,
       "title": "Spider-Man: No Way Home",
       "director": "Jon Watts",
       "category": "Acción",
       "stars": 5,
       "img": "spiderman.png"
-    },
-    {
-      "id": 9,
-      "title": "El sexto sentido",
-      "director": "M. Night Shyamalan",
-      "category": "Drama",
-      "stars": 5
-    },
-    {
-      "id": 10,
-      "title": "Sagan",
-      "director": "M. Night Shyamalan",
-      "category": "Drama",
-      "stars": 5
     },
     {
       "id": 11,
