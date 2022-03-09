@@ -243,7 +243,7 @@ button:hover {
 }
 
 .delete-text {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: var(--white-base);
   letter-spacing: 0.1rem;
 }

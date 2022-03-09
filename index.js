@@ -1,12 +1,10 @@
 const domMovies = document.getElementById('movies')
-// const deleteModal = document.getElementById('delete-modal')
-// let deleteMovie
-// let cancelDelete
+const urlServerMovies = 'http://localhost:3000/movies/'
 
 let movies = []
 domMovies.innerHTML = ``
 
-fetch('db.json')
+let letFetch = fetch('db.json')
   .then(response => response.json())
   .then(data => {
     movies = data.movies
@@ -33,12 +31,17 @@ function cancelModalDelete(id) {
 }
 
 function deleteMovie(id) {
-  const movieSelect = movies.filter(movie => movie.id == id)[0]
-
-  alert(`Are you sure you want to delete ${movieSelect.title}?`)
+  fetch(urlServerMovies + id, {
+    method: 'DELETE',
+  })
+    .then(response => response.json())
+    .then(data => {
+      viewMovies(data)
+    })
 }
 
 function viewMovies(movies) {
+  domMovies.innerHTML = ``
   for (let i = 0; i < movies.length; i++) {
     const movie = movies[i]
     const movieId = "movie-" + movie.id
