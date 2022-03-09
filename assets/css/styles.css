@@ -8,11 +8,16 @@
 }
 
 :root {
-  --white-base: rgb(255, 255, 255);
-  --white-light: rgba(255, 255, 255, 0.7);
-  --black-base: rgb(0, 0, 0);
-  --black-light: rgba(0, 0, 0, 0.4);
-  --black-lighter: rgba(0, 0, 0, 0.2);
+  --white-base: rgb(255, 253, 237);
+  --white-light: rgba(255, 253, 237, 0.7);
+  --black-base: rgb(7, 2, 13);
+  --black-light: rgba(7, 2, 13, 0.4);
+  --black-lighter: rgba(7, 2, 13, 0.1);
+
+  --base: var(--black-base);
+  --text-base: var(--white-base);
+  --primary: rgb(79, 71, 137);
+  --secondary: rgb(252, 231, 98);
 }
 
 ::selection {
@@ -21,7 +26,9 @@
 
 body {
   font-family: 'Heebo', sans-serif;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  background: var(--base);
+  color: var(--text-base);
 }
 
 h1 {
@@ -51,7 +58,6 @@ span {
 .movie {
   background: var(--white-base);
   border-radius: 1rem;
-  box-shadow: 0 0.5rem 1rem var(--black-lighter);
   overflow: hidden;
   padding: 1.5rem;
   height: 50vh;
@@ -59,6 +65,11 @@ span {
   background-position: center;
   color: var(--white-base);
   position: relative;
+  border: 2px solid var(--primary);
+}
+
+.movie:hover {
+  border: 2px solid var(--secondary);
 }
 
 .bg-filter {
