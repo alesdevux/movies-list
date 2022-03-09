@@ -7,12 +7,21 @@
   cursor: default;
 }
 
+:root {
+  --white-base: rgb(255, 255, 255);
+  --white-light: rgba(255, 255, 255, 0.7);
+  --black-base: rgb(0, 0, 0);
+  --black-light: rgba(0, 0, 0, 0.4);
+  --black-lighter: rgba(0, 0, 0, 0.2);
+}
+
 ::selection {
   display: none;
 }
 
 body {
   font-family: 'Heebo', sans-serif;
+  transition: all 0.3s ease-in-out;
 }
 
 h1 {
@@ -40,20 +49,20 @@ span {
 }
 
 .movie {
-  background: #fff;
+  background: var(--white-base);
   border-radius: 1rem;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.5rem 1rem var(--black-lighter);
   overflow: hidden;
   padding: 1.5rem;
   height: 50vh;
   background-size: cover;
   background-position: center;
-  color: #fff;
+  color: var(--white-base);
   position: relative;
 }
 
 .bg-filter {
-  background: rgba(0, 0, 0, 0.4);
+  background: var(--black-light);
   height: 100%;
   left: 0;
   position: absolute;
@@ -66,9 +75,13 @@ span {
   justify-content: space-between;
 }
 
+.bg-filter:hover {
+  background: var(--black-lighter);
+}
+
 .movie h2,
 .movie p {
-  color: #fff;
+  color: var(--white-base);
 }
 
 .movie-info {
@@ -80,15 +93,15 @@ span {
 .category {
   font-size: 0.8rem;
   padding: 0.2rem 1.2rem;
-  border: 2px solid rgba(255, 255, 255, 0.7);
+  border: 2px solid var(--white-light);
   border-radius: 2rem;
   text-transform: uppercase;
-  background-color: rgba(0, 0, 0, 0.25);
+  background-color: var(--black-lighter);
   cursor: pointer;
 }
 
 .category:hover {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: var(--black-light);
 }
 
 .director {
@@ -112,7 +125,7 @@ span {
 }
 
 .stars span {
-  color: #fff;
+  color: var(--white-base);
   font-size: 0.8rem;
   margin-left: 0.5rem;
 }
