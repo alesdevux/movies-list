@@ -6,7 +6,7 @@
       "time": "1:25h",
       "stars": "4",
       "category": "Action, Crime, Drama",
-      "img": "pulp-fiction.png",
+      "img": "https://www.votivkino.at/votivdefrance/wp-content/uploads/2019/05/pulpfiction02.jpeg",
       "id": 1
     },
     {
@@ -16,7 +16,7 @@
       "time": "1:35h",
       "stars": "5",
       "category": "Action",
-      "img": "spiderman.png"
+      "img": "https://www.nme.com/wp-content/uploads/2021/08/spider-man-no-way-home-teaser-trailer-doctor-octopus-green-goblin-1392x884.jpg"
     },
     {
       "title": "Cowspiracy: The Sustainability Secret",
@@ -24,7 +24,7 @@
       "category": "Documental",
       "stars": 4,
       "id": 3,
-      "img": "cowspiracy.png",
+      "img": "https://bingeddata.s3.amazonaws.com/uploads/2020/11/cowspiracy-the-sustainability-secret-1.jpg",
       "time": "1:25h"
     },
     {
@@ -33,7 +33,7 @@
       "director": "Matt Reeves",
       "category": "Action, Drama, Crime",
       "stars": 5,
-      "img": "batman.png",
+      "img": "https://cimg3.ibsrv.net/gimg/dvdtalk.com-vbulletin/1080x1283/900abecd9ee5840741045ab0062f03d4_2f0eb6551dd3eeb9fa6eddcf06be81a820e5be18.jpg",
       "time": "2:56h"
     },
     {
@@ -42,7 +42,7 @@
       "director": "Chris Buck, Jennifer Lee",
       "category": "Animation, Adventure",
       "stars": 4,
-      "img": "frozen.jpg",
+      "img": "http://www.miss.at/wp-content/uploads/2018/03/elsa-frozen-freundin.jpg",
       "time": "1:42h"
     },
     {
@@ -52,7 +52,7 @@
       "time": "1:42h",
       "stars": "4",
       "category": "Animation, Comedy",
-      "img": "encanto.jpeg"
+      "img": "https://mickeyblog.com/wp-content/uploads/2021/07/Encanto-2.png"
     },
     {
       "id": 7,
@@ -60,8 +60,17 @@
       "director": "Andrew Niccol",
       "category": "Action, Sci-Fi Thriller",
       "stars": 5,
-      "img": "intime.jpg",
+      "img": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.cAPl-kTTcYcfQf-BTu8E5gHaEK%26pid%3DApi&f=1",
       "time": "1:49h"
+    },
+    {
+      "id": 8,
+      "title": "Hola",
+      "director": "AKka",
+      "category": "Drama",
+      "time": "12º",
+      "stars": "2",
+      "img": ""
     }
   ]
 }

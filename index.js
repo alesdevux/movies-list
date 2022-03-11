@@ -168,7 +168,7 @@ function viewMovies(movies) {
     const editMovieId = "edit-movie-" + movie.id
 
     if (movie.img === "" || movie.img === null || movie.img === undefined) {
-      movie.img = "default.png"
+      movie.img = "./assets/img/default.png"
     }
 
     let categories = movie.category
@@ -218,7 +218,7 @@ function viewMovies(movies) {
       </div>
     `
     const domMovie = document.getElementById(movieId)
-    domMovie.style.backgroundImage = `url("./assets/img/${movie.img}")`
+    domMovie.style.backgroundImage = `url("${movie.img}")`
 
     const printDeleteMovie = document.getElementById(deleteMovieId)
     printDeleteMovie.innerHTML = `
