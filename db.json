@@ -49,10 +49,10 @@
       "id": 7,
       "title": "Encanto",
       "director": "Jared Bush, Byron Howard, Charise Castro Smith",
+      "time": "1:42h",
+      "stars": "4",
       "category": "Animation, Comedy",
-      "stars": 5,
-      "img": "encanto.jpeg",
-      "time": "1:42h"
+      "img": "encanto.jpeg"
     },
     {
       "id": 1,

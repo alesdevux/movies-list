@@ -306,3 +306,67 @@ input:focus {
   background: var(--edit);
   border-color: var(--edit);
 }
+
+.section-add-movie {
+  background: var(--black-base);
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  transition: all 0.2s ease-in;
+}
+
+.add-inputs {
+  max-width: 300px;
+}
+
+.add-inputs input {
+  margin-bottom: 1rem;
+}
+
+.view-add-movie {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.view-add-movie h2,
+.view-add-movie .add-inputs {
+  display: block;
+}
+
+.hide-add-movie {
+  bottom: -110vh;
+}
+
+.hide-add-movie h2,
+.hide-add-movie .add-inputs {
+  display: none;
+}
+
+#add-movie {
+  border-radius: 0;
+  width: 100vw;
+  border: none;
+  border-top: 2px solid var(--secondary);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: var(--base);
+  z-index: 40;
+  padding: 1.5rem;
+  color: var(--secondary);
+}
+
+#add-movie:hover {
+  background-color: var(--secondary);
+  color: var(--black-base);
+}
