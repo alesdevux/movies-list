@@ -18,7 +18,7 @@
   </section>
   <section id="section-add-movie" class="section-add-movie hide-add-movie">
     <h2>Add a movie</h2>
-    <form id="add-movie-form" class="add-movie-form" action="index.html" method="post">
+    <div id="add-movie-form" class="add-movie-form">
       <div class="add-inputs">
         <label for="title">Title</label>
         <input type="text" name="title" id="title" required>
@@ -30,8 +30,10 @@
         <input type="text" name="time" id="time" required>
         <label for="stars">Stars</label>
         <input type="text" name="stars" id="stars" required>
+        <label for="image">Image</label>
+        <input type="text" name="image" id="img">
       </div>
-      <button id="add-movie" class="add-movie">Add movie</button>
-    </form>
+      <button id="add-movie" class="add-movie" active="false">Add movie</button>
+    </div>
 </body>
 </html>

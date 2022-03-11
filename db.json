@@ -7,10 +7,10 @@
       "stars": "4",
       "category": "Action, Crime, Drama",
       "img": "pulp-fiction.png",
-      "id": 2
+      "id": 1
     },
     {
-      "id": 8,
+      "id": 2,
       "title": "Spider-Man: No Way Home",
       "director": "Jon Watts",
       "time": "1:35h",
@@ -23,12 +23,12 @@
       "director": "Kip Andersen, Keegan Kuhn",
       "category": "Documental",
       "stars": 4,
-      "id": 12,
+      "id": 3,
       "img": "cowspiracy.png",
       "time": "1:25h"
     },
     {
-      "id": 3,
+      "id": 4,
       "title": "The Batman",
       "director": "Matt Reeves",
       "category": "Action, Drama, Crime",
@@ -37,7 +37,7 @@
       "time": "2:56h"
     },
     {
-      "id": 6,
+      "id": 5,
       "title": "Frozen",
       "director": "Chris Buck, Jennifer Lee",
       "category": "Animation, Adventure",
@@ -46,7 +46,7 @@
       "time": "1:42h"
     },
     {
-      "id": 7,
+      "id": 6,
       "title": "Encanto",
       "director": "Jared Bush, Byron Howard, Charise Castro Smith",
       "time": "1:42h",
@@ -55,7 +55,7 @@
       "img": "encanto.jpeg"
     },
     {
-      "id": 1,
+      "id": 7,
       "title": "In Time",
       "director": "Andrew Niccol",
       "category": "Action, Sci-Fi Thriller",

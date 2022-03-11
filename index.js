@@ -1,18 +1,51 @@
-const domMovies = document.getElementById('movies')
 const urlServerMovies = 'http://localhost:3000/movies/'
+const domMovies = document.getElementById('movies')
+const btnAddMovie = document.getElementById('add-movie')
+const sectionAddMovie = document.getElementById('section-add-movie')
 
+let letFetch
 let movies = []
+let topIdMovie = 0
 domMovies.innerHTML = ``
 
-let letFetch = fetch('db.json')
-  .then(response => response.json())
-  .then(data => {
-    movies = data.movies
-  })
-  .then(() => {
-    viewMovies(movies)
-  })
+btnAddMovie.addEventListener('click', () => {
+  if (btnAddMovie.getAttribute('active') === 'false') {
+    btnAddMovie.setAttribute('active', 'true')
+    sectionAddMovie.classList.remove('hide-add-movie')
+    sectionAddMovie.classList.add('view-add-movie')
+    document.body.style.overflow = 'hidden'
+    return
+  }
+  if (btnAddMovie.getAttribute('active') === 'true') {
+    btnAddMovie.setAttribute('active', 'false')
+    sectionAddMovie.classList.remove('view-add-movie')
+    sectionAddMovie.classList.add('hide-add-movie')
+    document.body.style.overflow = 'auto'
+    addMovie()
+    // reset form values after submit
+    document.getElementById('title').value = ''
+    document.getElementById('director').value = ''
+    document.getElementById('time').value = ''
+    document.getElementById('stars').value = ''
+    document.getElementById('category').value = ''
+    document.getElementById('img').value = ''
+    return
+  }
+})
 
+function getMovies() {
+  letFetch = fetch('db.json')
+    .then(response => response.json())
+    .then(data => {
+      movies = data.movies
+      idMovies()
+    })
+    .then(() => {
+      viewMovies(movies)
+    })
+}
+
+getMovies()
 
 function modalEditMovie(id) {
   const modalEdit = document.getElementById(`edit-movie-${id}`)
@@ -75,6 +108,50 @@ function cancelModalDelete(id) {
 function deleteMovie(id) {
   fetch(urlServerMovies + id, {
     method: 'DELETE',
+  })
+    .then(response => response.json())
+    .then(data => {
+      viewMovies(data)
+    })
+}
+
+function idMovies() {
+  movies.forEach(movie => {
+    if (movie.id > topIdMovie) {
+      topIdMovie = movie.id
+    }
+  })
+}
+
+function addMovie() {
+  const title = document.getElementById('title').value
+  const director = document.getElementById('director').value
+  const time = document.getElementById('time').value
+  const stars = document.getElementById('stars').value
+  const category = document.getElementById('category').value
+  const img = document.getElementById('img').value
+  const id = topIdMovie + 1
+
+  if (title === '' || director === '' || time === '' || stars === '' || category === '') {
+    alert('Please fill all fields')
+    return
+  }
+  
+  const movie = {
+    id,
+    title,
+    director,
+    category,
+    time,
+    stars,
+    img,
+  }
+  fetch(urlServerMovies, {
+    method: 'POST',
+    body: JSON.stringify(movie),
+    headers: {
+      'Content-Type': 'application/json; charset=utf-8',
+    }
   })
     .then(response => response.json())
     .then(data => {
