@@ -19,6 +19,7 @@
   --primary: rgb(79, 71, 137);
   --secondary: rgb(252, 231, 98);
   --delete: rgb(173, 52, 62);
+  --edit: var(--primary);
 }
 
 ::selection {
@@ -67,6 +68,24 @@ button:hover {
   background: var(--secondary);
   border-color: var(--secondary);
   color: var(--black-base);
+}
+
+input {
+  border: 2px solid var(--primary);
+  border-radius: 0.5rem;
+  background: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0.6rem 0.8rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
+  color: var(--text-base);
+  width: 100%;
+  margin-bottom: 0.3rem;
+}
+
+input:focus {
+  border-color: var(--secondary);
 }
 
 .movies {
@@ -278,8 +297,12 @@ button:hover {
   transition: all 0.2s ease-in;
 }
 
-.delete-movie,
-.edit-movie {
+.delete-movie {
   background: var(--delete);
   border-color: var(--delete);
+}
+
+.edit-movie {
+  background: var(--edit);
+  border-color: var(--edit);
 }
