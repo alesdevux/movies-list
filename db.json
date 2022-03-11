@@ -1,22 +1,22 @@
 {
   "movies": [
     {
-      "id": 2,
       "title": "Pulp Fiction",
       "director": "Tarantino",
+      "time": "1:25h",
+      "stars": "4",
       "category": "Action, Crime, Drama",
-      "stars": 5,
       "img": "pulp-fiction.png",
-      "time": "1:25h"
+      "id": 2
     },
     {
       "id": 8,
       "title": "Spider-Man: No Way Home",
       "director": "Jon Watts",
+      "time": "1:35h",
+      "stars": "5",
       "category": "Action",
-      "stars": 5,
-      "img": "spiderman.png",
-      "time": "1:25h"
+      "img": "spiderman.png"
     },
     {
       "title": "Cowspiracy: The Sustainability Secret",
@@ -53,15 +53,6 @@
       "stars": 5,
       "img": "encanto.jpeg",
       "time": "1:42h"
-    },
-    {
-      "id": 9,
-      "title": "The Wave",
-      "director": "Dennis Gansel",
-      "category": "Drama, Thriller",
-      "stars": 4,
-      "img": "thewave.jpg",
-      "time": "1:47h"
     },
     {
       "id": 1,

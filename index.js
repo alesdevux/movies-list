@@ -14,8 +14,50 @@ let letFetch = fetch('db.json')
   })
 
 
+function modalEditMovie(id) {
+  const modalEdit = document.getElementById(`edit-movie-${id}`)
+  modalEdit.classList.remove('hide-edit-movie')
+  modalEdit.classList.add('view-edit-movie')
+}
+
+function cancelModalEdit(id) {
+  const modalEdit = document.getElementById(`edit-movie-${id}`)
+  modalEdit.classList.remove('view-edit-movie')
+  modalEdit.classList.add('hide-edit-movie')
+}
+
 function editMovie(id) {
-  alert(`Are you sure you want to edit ${id}?`)
+  console.log(id)
+  const title = `edit-title-${id}`
+  const director = `edit-director-${id}`
+  const time = `edit-time-${id}`
+  const stars = `edit-stars-${id}`
+  const category = `edit-category-${id}`
+  const img = `edit-img-${id}`
+  const movie = {
+    id,
+    title: document.getElementById(title).value,
+    director: document.getElementById(director).value,
+    time: document.getElementById(time).value,
+    stars: document.getElementById(stars).value,
+    category: document.getElementById(category).value,
+    img: document.getElementById(img).value,
+  }
+  console.log(title)
+  console.log(document.getElementById(title).value)
+  fetch(urlServerMovies + id, {
+    method: 'PUT',
+    body: JSON.stringify(movie),
+    headers: {
+      'Content-Type': 'application/json; charset=utf-8',
+    }
+  })
+    .then(response => response.json())
+    .then(data => {
+      console.log(data)
+      cancelModalEdit(id)
+      viewMovies(movies)
+    })
 }
 
 function modalDeleteMovie(id) {
@@ -46,6 +88,7 @@ function viewMovies(movies) {
     const movie = movies[i]
     const movieId = "movie-" + movie.id
     const deleteMovieId = "delete-movie-" + movie.id
+    const editMovieId = "edit-movie-" + movie.id
 
     if (movie.img === "" || movie.img === null || movie.img === undefined) {
       movie.img = "default.png"
@@ -72,8 +115,9 @@ function viewMovies(movies) {
         <div class="bg-filter">
           <h2>${movie.title}</h2>
           <div id="${deleteMovieId}" class="hide-delete-movie"></div>
+          <div id="${editMovieId}" class="hide-edit-movie"></div>
           <div class="edit-delete">
-            <div class="edit" onclick="editMovie(${movie.id})">
+            <div class="edit" onclick="modalEditMovie(${movie.id})">
               <img src="./assets/svg/edit.svg" alt="edit" class="edit-icon">
             </div>
             <div class="delete" onclick="modalDeleteMovie(${movie.id})">
@@ -108,6 +152,22 @@ function viewMovies(movies) {
       <div class="delete-buttons">
         <button class="delete-movie" onclick="deleteMovie(${movie.id})">Delete movie</button>
         <button class="cancel-delete" onclick="cancelModalDelete(${movie.id})">No, cancel</button>
+      </div>
+    `
+
+    const printEditMovie = document.getElementById(editMovieId)
+    printEditMovie.innerHTML = `
+      <div class="edit-text">
+        <input type="text" id="edit-title-${movie.id}" value="${movie.title}">
+        <input type="text" id="edit-director-${movie.id}" value="${movie.director}">
+        <input type="text" id="edit-time-${movie.id}" value="${movie.time}">
+        <input type="text" id="edit-stars-${movie.id}" value="${movie.stars}">
+        <input type="text" id="edit-category-${movie.id}" value="${movie.category}">
+        <input type="text" id="edit-img-${movie.id}" value="${movie.img}">
+      </div>
+      <div class="edit-buttons">
+        <button class="edit-movie" onclick="editMovie(${movie.id})">Edit movie</button>
+        <button class="cancel-edit" onclick="cancelModalEdit(${movie.id})">No, cancel</button>
       </div>
     `
   }

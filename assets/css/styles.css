@@ -215,7 +215,8 @@ button:hover {
   margin-left: 0.5rem;
 }
 
-.view-delete-movie {
+.view-delete-movie,
+.view-edit-movie {
   position: absolute;
   top: 0;
   left: 0;
@@ -234,16 +235,20 @@ button:hover {
   padding: 1.5rem;
 }
 
-.hide-delete-movie {
+.hide-delete-movie,
+.hide-edit-movie {
   left: -100%;
 }
 
 .view-delete-movie,
-.hide-delete-movie {
+.hide-delete-movie,
+.view-edit-movie,
+.hide-edit-movie {
   transition: left 0.5s ease-in-out;
 }
 
-.hide-delete-movie * {
+.hide-delete-movie *,
+.hide-edit-movie * {
   position: absolute;
   left: -100%;
 }
@@ -260,18 +265,21 @@ button:hover {
   text-transform: uppercase;
 }
 
-.delete-buttons {
+.delete-buttons,
+.edit-buttons {
   display: flex;
   gap: 1rem;
   width: 100%;
 }
 
-.delete-buttons button {
+.delete-buttons button,
+.edit-buttons button {
   flex: 1;
   transition: all 0.2s ease-in;
 }
 
-.delete-movie {
+.delete-movie,
+.edit-movie {
   background: var(--delete);
   border-color: var(--delete);
 }
